@@ -1,10 +1,7 @@
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> 2228c76baa26961a927b2b258c06c8a8a1046533
+
 
 # password-generator
-
+![screencapture-127-0-0-1-5500-Develop-index-html-2022-01-16-20_29_48](https://user-images.githubusercontent.com/95703604/149696266-7b0afbca-81b4-47df-a533-71bff6a2fca4.png)
 [Link to deployed application](https://skronkie.github.io/password-generator/)
 
 ## The task
@@ -49,13 +46,4 @@
 
 ### THEN the password is either displayed in an alert or written to the page
 
-=======
 
-<<<<<<< HEAD
-# password-generator!
-
-=======
->>>>>>> 2228c76baa26961a927b2b258c06c8a8a1046533
-![screencapture-127-0-0-1-5500-Develop-index-html-2022-01-16-20_29_48](https://user-images.githubusercontent.com/95703604/149696266-7b0afbca-81b4-47df-a533-71bff6a2fca4.png)
-
-> > > > > > > 0949e6885bb95710f2edbd273b95bb1a2bce1759
