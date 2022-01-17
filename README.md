@@ -1,8 +1,7 @@
 
 # password-generator
 
-screenshot
-link
+[Link to deployed application](https://skronkie.github.io/password-generator/)
 
 ## The task
 
