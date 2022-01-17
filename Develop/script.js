@@ -8,7 +8,7 @@ var generatePassword = function () {
     window.alert("Password must be between 8 and 128 characters.");
     return "";
   }
-  var charSet = "";
+  let charSet = "";
   if (
     window.confirm("Would you like to add lowercase letters to your password?")
   ) {
@@ -26,9 +26,10 @@ var generatePassword = function () {
     window.confirm("Would you like to add special characters to your password?")
   ) {
     charSet += " !#$%&()*+,-./:;<>=?@[]^";
-  } else if (!charSet.length) {
-    window.alert;
-    ("You must select at least 1 type of variable to be included in your password.");
+  } else if (!charSet) {
+    window.alert(
+      "You must select at least 1 type of variable to be included in your password."
+    );
     return "";
   }
   console.log(charSet);
