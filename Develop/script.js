@@ -8,36 +8,38 @@ var generatePassword = function () {
     window.alert("Password must be between 8 and 128 characters.");
     return "";
   }
-  var symbols = "";
+  var charSet = "";
   if (
     window.confirm("Would you like to add lowercase letters to your password?")
   ) {
-    symbols += "abcdefghijklmnopqrstuvwxyz";
+    charSet += "abcdefghijklmnopqrstuvwxyz";
   }
   if (
     window.confirm("Would you like to add uppercase letters to your password?")
   ) {
-    symbols += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+    charSet += "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
   }
   if (window.confirm("Would you like to add numbers to your password?")) {
-    symbols += "0123456789";
+    charSet += "0123456789";
   }
   if (
     window.confirm("Would you like to add special characters to your password?")
   ) {
-    symbols += " !#$%&()*+,-./:;<>=?@[]^";
-  } else if (!symbols.length) {
+    charSet += " !#$%&()*+,-./:;<>=?@[]^";
+  } else if (!charSet.length) {
     window.alert;
     ("You must select at least 1 type of variable to be included in your password.");
     return "";
   }
-  console.log(symbols);
+  console.log(charSet);
+  var password = "";
+  for (var i = 0; i < pwLength; i++) {
+    var random = Math.floor(Math.random() * charSet.length);
+    password += charSet.charAt(random);
+  }
+  return password;
 };
 
-var randomNumber = function () {
-  var value = Math.floor(Math.random() * (1 - 10 + 1) + 1);
-  return value;
-};
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 // Write password to the #password input
